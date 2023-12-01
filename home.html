@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<title>Travel blog</title>
+	<script>
+		function openSelectedRegion() {
+ 			 var selectedValue = document.getElementById("regionSelect").value;
+
+ 			 switch(selectedValue) {
+  			  case "and_nic":
+ 			     window.location.href = "and_nic.html";
+			     break;
+			  case "south":
+			      window.location.href = "south.html";
+			      break;
+			  case "east":
+			      window.location.href = "east.html";
+			      break;
+			  case "north":
+			      window.location.href = "north.html";
+			      break;
+			  case "west":
+ 			     window.location.href = "west.html";
+			     break;
+			  default:
+			     window.location.href= "home.html";
+			}
+		}
+	</script>
+</head>
+<body>
+	<section class="nav-bar">
+	<div class="logo">Vibrant Ventures</div>
+	<ul class="menu">
+		<li><a href="home.html">Home</a></li>
+		<li><a href="destinations.html">Destinations</a></li>
+                		<li><a href="traveltips.html">Travel tips</a></li>
+               		<li><a href="about.html">About</a></li>
+            	</ul>
+           	</div>
+        	</section>
+
+<!--===============Banner================-->
+        <section class="banner">
+            <div class="banner-text-item">
+                <div class="banner-heading">
+                    <h1>Where do you want to go?</h1>
+                </div>
+                <form class="form">
+                    <select id="regionSelect" onchange="openSelectedRegion()">
+ 		 <option>Find your destination!</option>
+ 		 <option value="and_nic">Andaman and Nicobar Islands</option>
+ 		 <option value="south">Andhra Pradesh</option>
+ 		   <option value="east">Assam</option>
+  		  <option value="north">Chandigarh</option>
+ 		   <option value="west">Daman and Diu</option>
+ 		   <option value="north">Delhi</option>
+		    <option value="west">Goa</option>
+		    <option value="west">Gujarat</option>
+		    <option value="north">Himachal Pradesh</option>
+		    <option value="north">Jammu, Kashmir, Leh-Ladakh</option>
+		    <option value="south">Karnataka</option>
+		    <option value="south">Kerala</option>
+		    <option value="and_nic">Lakshadweep</option>
+ 		   <option value="south">Puducherry</option>
+ 		   <option value="north">Rajasthan</option>
+ 		   <option value="south">Tamil Nadu</option>
+ 		   <option value="south">Telangana</option>
+ 		   <option value="north">Uttar Pradesh</option>
+ 		   <option value="north">Uttarakhand</option>
+ 		   <option value="east">West Bengal</option>
+	</select>
+                    <a href="#" class="book">Go</a>
+                </form>
+            </div>
+        </section>
+
+        <!--==============Places===================-->
+        <section id="places">
+            <div class="places-text">
+                <h2>Regional Travel Guides</h2>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card"><a href="North.html">
+                            <img src="n_india.jpg"></a>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h2>North India</h2>
+                        <div class="card-box">
+                            <p class="location">Delhi, UP, Rajasthan, Himachal Pradesh, Ladakh</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card"><a href="West.html">
+                            <img src="w_india.jpg"></a>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h2>West India</h2>
+                        <div class="card-box">
+                            <p class="location">Goa, Gujarat, Maharashtra, Daman and Diu</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card"><a href="South.html">
+                            <img src="s_india.jpg"></a>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h2>South India</h2>
+                        <div class="card-box">
+                            <p class="location">Kerala, Karnataka, AP, Telangana, TN, Pondicherry</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card"><a href="East_and_northeast.html">
+                            <img src="e_ne_india.jpg"></a>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h2>East and Northeast India</h2>
+                        <div class="card-box">
+                            <p class="location">Odisha, West Bengal, Assam, Nagaland, Sikkim, Meghalaya</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card"><a href="Central.html">
+                            <img src="c_india.jpg"></a>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h2>Central India</h2>
+                        <div class="card-box">
+                            <p class="location">Madhya Pradesh, Bihar, Chattisgarh, Jharkhand</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card"><a href="and_nic.html">
+                            <img src="and_nic.jpg"></a>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h2>The Islands</h2>
+                        <div class="card-box">
+                            <p class="location">Andaman and Nicobar Islands, Lakshadweep</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!--===========About Us===============-->
+	<div class="about">
+  		<img src="outdoor_tjjhxk.jpg" style="width:100%">
+  		<div class="centred">
+			<h2>ABOUT US - Vibrant Ventures</h2>
+                		<p>We are a jolly bunch of engineering students passionate about exploring the world and sharing our adventures with fellow wanderlust seekers. Our tagline: "Unveiling India's charms, one at a time", embodies our spirit. Our blog is a virtual treasure trove of travel inspiration, tips, and stories that will ignite your passion for discovering new destinations and experiencing the beauty and diversity of cultures in our country.</p>                
+		</div>
+	</div>
+       <!--===========Footer=================-->
+        <div class="footer">
+            <div class="links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Travel Tips</li>
+                    <li>Guidebooks</li>
+                    <li>About</li>
+                </ul>
+            </div>
+	<div class="links">
+                <h3>Trending Destinations</h3>
+                <ul>
+                    <li>Kerala</li>
+                    <li>Ladakh</li>
+                    <li>Rajasthan</li>
+                    <li>Uttarakhand</li>
+                </ul>
+            </div>
+            <div class="links">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Pinterest</li>
+                    <li>Facebook</li>
+                </ul>
+            </div>
+        </div>
+</body>
+</html>
